@@ -1,21 +1,32 @@
+import Book from './Book';
+
+const books = [
+  {
+    id: 1,
+    category: 'Action',
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+  },
+  {
+    id: 2,
+    category: 'Action',
+    title: 'Dune',
+    author: 'Frank Herbert',
+  },
+];
+
 function BookList() {
   return (
     <ul>
-
-      <li>
-        <h4>Action</h4>
-        <h2>The Hunger Games</h2>
-        <h6>Suzanne Collins</h6>
-        <button type="button">Remove</button>
-      </li>
-
-      <li>
-        <h4>Science Fiction</h4>
-        <h2>Dune</h2>
-        <h6>Frank Herbert</h6>
-        <button type="button">Remove</button>
-      </li>
-
+      {books.map((item) => (
+        <li key={item.id}>
+          <Book
+            category={item.category}
+            title={item.title}
+            author={item.author}
+          />
+        </li>
+      ))}
     </ul>
   );
 }
