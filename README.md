@@ -40,7 +40,8 @@
   <ul>
     <li><a href="https://www.w3schools.com/html/">HTML</a></li>
     <li><a href="https://www.w3schools.com/css/">CSS</a></li>
-     <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
+    <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
+    <li><a href="https://www.w3schools.com/react/">React</a></li>
   </ul>
 </details>
 
