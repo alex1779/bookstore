@@ -1,24 +1,11 @@
+import { useSelector } from 'react-redux';
 import Book from './Book';
 
-const books = [
-  {
-    id: 1,
-    category: 'Action',
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
-  },
-  {
-    id: 2,
-    category: 'Action',
-    title: 'Dune',
-    author: 'Frank Herbert',
-  },
-];
-
 function BookList() {
+  const { bookList } = useSelector((store) => store.books);
   return (
     <ul>
-      {books.map((item) => (
+      {bookList.map((item) => (
         <li key={item.id}>
           <Book
             category={item.category}
