@@ -8,9 +8,7 @@ function BookList() {
       {bookList.map((item) => (
         <li key={item.id}>
           <Book
-            category={item.category}
-            title={item.title}
-            author={item.author}
+            bookData={item}
           />
         </li>
       ))}
