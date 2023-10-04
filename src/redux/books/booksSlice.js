@@ -2,7 +2,26 @@ import { createSlice } from '@reduxjs/toolkit';
 import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
-  bookList: [],
+  bookList: [
+    {
+      id: 'item1',
+      title: 'The Great Gatsby',
+      author: 'John Smith',
+      category: 'Fiction',
+    },
+    {
+      id: 'item2',
+      title: 'Anna Karenina',
+      author: 'Leo Tolstoy',
+      category: 'Fiction',
+    },
+    {
+      id: 'item3',
+      title: 'The Selfish Gene',
+      author: 'Richard Dawkins',
+      category: 'Nonfiction',
+    },
+  ],
 };
 
 export const booksSlice = createSlice({
@@ -17,7 +36,6 @@ export const booksSlice = createSlice({
       });
     },
     remove(state, action) {
-      // console.log(action.payload);
       return {
         ...state,
         bookList: state.bookList.filter((books) => books.id !== action.payload.bookData.id),
