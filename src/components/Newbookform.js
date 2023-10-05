@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createNewBook, fetchBooksFromApi } from '../redux/books/booksSlice';
+import styles from '../styles/NewBook.module.css';
 
 function Newbookform() {
   const [title, setTitle] = useState('');
@@ -18,34 +19,41 @@ function Newbookform() {
   };
 
   return (
-    <section>
-      <h2>ADD NEW BOOK</h2>
+    <>
+      <div className={styles.formTitle}>ADD NEW BOOK</div>
       <form
-        className="form-container"
+        className={styles.formContainer}
         onSubmit={async (e) => {
           e.preventDefault();
           await dispatch(createNewBook({ title, author }));
           await dispatch(fetchBooksFromApi());
+          const bookTitle = document.getElementById('book-title');
+          const bookAuthor = document.getElementById('book-author');
+          bookTitle.value = '';
+          bookAuthor.value = '';
         }}
       >
         <input
+          id="book-title"
           type="text"
           placeholder="Book title"
-          className="input-text"
+          className={styles.input}
           value={title}
           onChange={(e) => handleTitle(e)}
         />
 
         <input
+          id="book-author"
           type="text"
           placeholder="Author name"
-          className="input-text"
+          className={styles.input}
           value={author}
           onChange={(e) => handleAuthor(e)}
         />
-        <button type="submit">ADD BOOK</button>
+        <button className={styles.primaryBtnBig} type="submit">ADD BOOK</button>
       </form>
-    </section>
+
+    </>
   );
 }
 

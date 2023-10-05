@@ -1,12 +1,13 @@
 import Newbookform from './Newbookform';
 import BookList from './BookList';
+import styles from '../styles/Home.module.css';
 
 function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <div>
         <BookList />
-        <div />
+        <div className={styles.divider} />
         <Newbookform />
       </div>
     </div>

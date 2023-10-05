@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #f5f6fa;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -24,4 +25,23 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+#root {
+  width: 92%;
+  margin: 55px auto;
+  padding: 0 0 8%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Slab';
+  src: url('./assets/fonts/RobotoSlab-VariableFont_wght.ttf');
 }
