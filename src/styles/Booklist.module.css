@@ -1,0 +1,7 @@
+.booklist {
+  list-style-type: none;
+}
+
+.booklist li {
+  margin-bottom: 15px;
+}
