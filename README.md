@@ -95,11 +95,16 @@ To run the project, execute the following command:
 
 
 
-### Deployment
+<!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"> </a>
 
+[Live demo](https://bookstore-ge1w.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 
 <!-- AUTHORS -->
 
