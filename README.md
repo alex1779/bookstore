@@ -61,17 +61,6 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Clone the repository by clicking on the 'Code' button and copy the link
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need:
-
-npm i
-
-### Setup
 
 Clone this repository to your desired folder:
 
@@ -86,66 +75,29 @@ Example commands:
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+Install the project with:
 
 ```sh
-  cd my-project
-  gem install
+  npm install
+
 ```
---->
+
+
 
 ### Usage
 
 To run the project, execute the following command:
-Open the index.html file in a web browser
 
-<!--
-Example command:
 
 ```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-Example command:
-
-To run the webhint linter
-
-```sh
-  npx hint .
+  npm start
 ```
 
-To run the stylehint linter
 
-```sh
-  npx stylehint "**/*.{css,scss}"
-```
-
-To run the ESLint linter
-
-```sh
-  npx eslint .
-```
 
 ### Deployment
 
-You can deploy this project using:
--Go to the main folder of the project and double-click on the index.html file.
 
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
